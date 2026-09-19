@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Network Demo - Full Coverage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== SOCIAL BAR (Sticky Top) ===== -->
+    <div class="social-bar" id="social-bar">
+        <div class="ad-placeholder glow-orange">
+            <span class="badge">SOCIAL BAR <span class="top-tag">TOP</span></span>
+            <span class="label">Script Goes Here</span>
+            <span class="slot-id">social-bar-01</span>
+        </div>
+    </div>
+
+    <!-- ===== POPUNDER (hidden) ===== -->
+    <div id="popunder-slot" style="display:none;"><!-- POPUNDER SCRIPT --></div>
+    <!-- ===== SMARTLINK (hidden) ===== -->
+    <div id="smartlink-slot" style="display:none;"><!-- SMARTLINK SCRIPT --></div>
+
+    <!-- ===== FULL PAGE GRID ===== -->
+    <div class="ad-grid">
+
+        <!-- ROW 1: Full width 728x90 -->
+        <div class="row full">
+            <div class="ad ad-728x90" id="b-728x90-1"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">728×90</span><span class="slot-id">b-728x90-1</span></div></div>
+        </div>
+
+        <!-- ROW 2: 468x60 + 300x250 + 160x300 -->
+        <div class="row r2">
+            <div class="ad ad-468x60" id="b-468x60-1"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">468×60</span><span class="slot-id">b-468x60-1</span></div></div>
+            <div class="ad ad-300x250" id="b-300x250-1"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">300×250</span><span class="slot-id">b-300x250-1</span></div></div>
+            <div class="ad ad-160x300" id="b-160x300-1"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">160×300</span><span class="slot-id">b-160x300-1</span></div></div>
+        </div>
+
+        <!-- ROW 3: Native Banner full width -->
+        <div class="row full">
+            <div class="ad native-full" id="native-1">
+                <div class="ad-placeholder native">
+                    <div class="native-row">
+                        <div class="native-card"><div class="n-thumb"></div><div class="n-lines"><div class="n-line w80"></div><div class="n-line w60"></div></div></div>
+                        <div class="native-card"><div class="n-thumb"></div><div class="n-lines"><div class="n-line w80"></div><div class="n-line w60"></div></div></div>
+                        <div class="native-card"><div class="n-thumb"></div><div class="n-lines"><div class="n-line w80"></div><div class="n-line w60"></div></div></div>
+                        <div class="native-card"><div class="n-thumb"></div><div class="n-lines"><div class="n-line w80"></div><div class="n-line w60"></div></div></div>
+                    </div>
+                    <span class="badge">NATIVE BANNER</span>
+                    <span class="slot-id">native-1</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ROW 4: 160x600 | center stack | 160x600 -->
+        <div class="row r4">
+            <div class="ad ad-160x600" id="b-160x600-1"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">160×600</span><span class="slot-id">b-160x600-1</span></div></div>
+            <div class="center-fill">
+                <div class="cf-row">
+                    <div class="ad ad-728x90" id="b-728x90-2"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">728×90</span><span class="slot-id">b-728x90-2</span></div></div>
+                </div>
+                <div class="cf-row">
+                    <div class="ad ad-300x250" id="b-300x250-2"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">300×250</span><span class="slot-id">b-300x250-2</span></div></div>
+                    <div class="ad ad-300x250" id="b-300x250-3"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">300×250</span><span class="slot-id">b-300x250-3</span></div></div>
+                </div>
+                <div class="cf-row">
+                    <div class="ad ad-468x60" id="b-468x60-2"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">468×60</span><span class="slot-id">b-468x60-2</span></div></div>
+                    <div class="ad ad-320x50" id="b-320x50-1"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">320×50</span><span class="slot-id">b-320x50-1</span></div></div>
+                </div>
+                <div class="cf-row">
+                    <div class="ad native-inline" id="native-2">
+                        <div class="ad-placeholder native">
+                            <div class="native-row">
+                                <div class="native-card sm"><div class="n-thumb"></div><div class="n-lines"><div class="n-line w80"></div><div class="n-line w60"></div></div></div>
+                                <div class="native-card sm"><div class="n-thumb"></div><div class="n-lines"><div class="n-line w80"></div><div class="n-line w60"></div></div></div>
+                            </div>
+                            <span class="badge">NATIVE BANNER</span>
+                            <span class="slot-id">native-2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ad ad-160x600" id="b-160x600-2"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">160×600</span><span class="slot-id">b-160x600-2</span></div></div>
+        </div>
+
+        <!-- ROW 5: Full width 728x90 -->
+        <div class="row full">
+            <div class="ad ad-728x90" id="b-728x90-3"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">728×90</span><span class="slot-id">b-728x90-3</span></div></div>
+        </div>
+
+        <!-- ROW 6: 3x 300x250 + 160x300 -->
+        <div class="row r6">
+            <div class="ad ad-300x250" id="b-300x250-4"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">300×250</span><span class="slot-id">b-300x250-4</span></div></div>
+            <div class="ad ad-300x250" id="b-300x250-5"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">300×250</span><span class="slot-id">b-300x250-5</span></div></div>
+            <div class="ad ad-300x250" id="b-300x250-6"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">300×250</span><span class="slot-id">b-300x250-6</span></div></div>
+            <div class="filler-stack">
+                <div class="ad ad-320x50" id="b-320x50-2"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">320×50</span><span class="slot-id">b-320x50-2</span></div></div>
+                <div class="ad ad-320x50" id="b-320x50-3"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">320×50</span><span class="slot-id">b-320x50-3</span></div></div>
+                <div class="ad ad-320x50" id="b-320x50-4"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">320×50</span><span class="slot-id">b-320x50-4</span></div></div>
+                <div class="ad ad-320x50" id="b-320x50-5"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">320×50</span><span class="slot-id">b-320x50-5</span></div></div>
+                <div class="ad ad-320x50" id="b-320x50-6"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">320×50</span><span class="slot-id">b-320x50-6</span></div></div>
+            </div>
+        </div>
+
+        <!-- ROW 7: Native full width -->
+        <div class="row full">
+            <div class="ad native-full" id="native-3">
+                <div class="ad-placeholder native">
+                    <div class="native-row">
+                        <div class="native-card"><div class="n-thumb"></div><div class="n-lines"><div class="n-line w80"></div><div class="n-line w60"></div></div></div>
+                        <div class="native-card"><div class="n-thumb"></div><div class="n-lines"><div class="n-line w80"></div><div class="n-line w60"></div></div></div>
+                        <div class="native-card"><div class="n-thumb"></div><div class="n-lines"><div class="n-line w80"></div><div class="n-line w60"></div></div></div>
+                        <div class="native-card"><div class="n-thumb"></div><div class="n-lines"><div class="n-line w80"></div><div class="n-line w60"></div></div></div>
+                    </div>
+                    <span class="badge">NATIVE BANNER</span>
+                    <span class="slot-id">native-3</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ROW 8: 160x600 | mix center | 160x300 stack -->
+        <div class="row r8">
+            <div class="ad ad-160x600" id="b-160x600-3"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">160×600</span><span class="slot-id">b-160x600-3</span></div></div>
+            <div class="center-fill">
+                <div class="cf-row">
+                    <div class="ad ad-468x60" id="b-468x60-3"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">468×60</span><span class="slot-id">b-468x60-3</span></div></div>
+                    <div class="ad ad-320x50" id="b-320x50-7"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">320×50</span><span class="slot-id">b-320x50-7</span></div></div>
+                </div>
+                <div class="cf-row">
+                    <div class="ad ad-300x250" id="b-300x250-7"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">300×250</span><span class="slot-id">b-300x250-7</span></div></div>
+                    <div class="ad ad-300x250" id="b-300x250-8"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">300×250</span><span class="slot-id">b-300x250-8</span></div></div>
+                </div>
+                <div class="cf-row">
+                    <div class="ad native-inline" id="native-4">
+                        <div class="ad-placeholder native">
+                            <div class="native-row">
+                                <div class="native-card sm"><div class="n-thumb"></div><div class="n-lines"><div class="n-line w80"></div><div class="n-line w60"></div></div></div>
+                                <div class="native-card sm"><div class="n-thumb"></div><div class="n-lines"><div class="n-line w80"></div><div class="n-line w60"></div></div></div>
+                                <div class="native-card sm"><div class="n-thumb"></div><div class="n-lines"><div class="n-line w80"></div><div class="n-line w60"></div></div></div>
+                            </div>
+                            <span class="badge">NATIVE BANNER</span>
+                            <span class="slot-id">native-4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="side-stack">
+                <div class="ad ad-160x300" id="b-160x300-2"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">160×300</span><span class="slot-id">b-160x300-2</span></div></div>
+                <div class="ad ad-160x300" id="b-160x300-3"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">160×300</span><span class="slot-id">b-160x300-3</span></div></div>
+            </div>
+        </div>
+
+        <!-- ROW 9: 2x 468x60 side by side -->
+        <div class="row full-pair">
+            <div class="ad ad-468x60" id="b-468x60-4"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">468×60</span><span class="slot-id">b-468x60-4</span></div></div>
+            <div class="ad ad-468x60" id="b-468x60-5"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">468×60</span><span class="slot-id">b-468x60-5</span></div></div>
+        </div>
+
+        <!-- ROW 10: 4x 300x250 -->
+        <div class="row quad">
+            <div class="ad ad-300x250" id="b-300x250-9"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">300×250</span><span class="slot-id">b-300x250-9</span></div></div>
+            <div class="ad ad-300x250" id="b-300x250-10"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">300×250</span><span class="slot-id">b-300x250-10</span></div></div>
+            <div class="ad ad-300x250" id="b-300x250-11"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">300×250</span><span class="slot-id">b-300x250-11</span></div></div>
+            <div class="ad ad-300x250" id="b-300x250-12"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">300×250</span><span class="slot-id">b-300x250-12</span></div></div>
+        </div>
+
+        <!-- ROW 11: Native full -->
+        <div class="row full">
+            <div class="ad native-full" id="native-5">
+                <div class="ad-placeholder native">
+                    <div class="native-row">
+                        <div class="native-card"><div class="n-thumb"></div><div class="n-lines"><div class="n-line w80"></div><div class="n-line w60"></div></div></div>
+                        <div class="native-card"><div class="n-thumb"></div><div class="n-lines"><div class="n-line w80"></div><div class="n-line w60"></div></div></div>
+                        <div class="native-card"><div class="n-thumb"></div><div class="n-lines"><div class="n-line w80"></div><div class="n-line w60"></div></div></div>
+                        <div class="native-card"><div class="n-thumb"></div><div class="n-lines"><div class="n-line w80"></div><div class="n-line w60"></div></div></div>
+                    </div>
+                    <span class="badge">NATIVE BANNER</span>
+                    <span class="slot-id">native-5</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ROW 12: Full width 728x90 -->
+        <div class="row full">
+            <div class="ad ad-728x90" id="b-728x90-4"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">728×90</span><span class="slot-id">b-728x90-4</span></div></div>
+        </div>
+
+        <!-- ROW 13: Mixed fill bottom -->
+        <div class="row r13">
+            <div class="filler-stack">
+                <div class="ad ad-468x60" id="b-468x60-6"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">468×60</span><span class="slot-id">b-468x60-6</span></div></div>
+                <div class="ad ad-468x60" id="b-468x60-7"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">468×60</span><span class="slot-id">b-468x60-7</span></div></div>
+                <div class="ad ad-468x60" id="b-468x60-8"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">468×60</span><span class="slot-id">b-468x60-8</span></div></div>
+                <div class="ad ad-320x50" id="b-320x50-8"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">320×50</span><span class="slot-id">b-320x50-8</span></div></div>
+            </div>
+            <div class="ad ad-300x250" id="b-300x250-13"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">300×250</span><span class="slot-id">b-300x250-13</span></div></div>
+            <div class="side-stack">
+                <div class="ad ad-160x300" id="b-160x300-4"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">160×300</span><span class="slot-id">b-160x300-4</span></div></div>
+            </div>
+        </div>
+
+        <!-- ROW 14: Native bottom -->
+        <div class="row full">
+            <div class="ad native-full" id="native-6">
+                <div class="ad-placeholder native">
+                    <div class="native-row">
+                        <div class="native-card"><div class="n-thumb"></div><div class="n-lines"><div class="n-line w80"></div><div class="n-line w60"></div></div></div>
+                        <div class="native-card"><div class="n-thumb"></div><div class="n-lines"><div class="n-line w80"></div><div class="n-line w60"></div></div></div>
+                        <div class="native-card"><div class="n-thumb"></div><div class="n-lines"><div class="n-line w80"></div><div class="n-line w60"></div></div></div>
+                        <div class="native-card"><div class="n-thumb"></div><div class="n-lines"><div class="n-line w80"></div><div class="n-line w60"></div></div></div>
+                    </div>
+                    <span class="badge">NATIVE BANNER</span>
+                    <span class="slot-id">native-6</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ROW 15: Bottom 728x90 -->
+        <div class="row full">
+            <div class="ad ad-728x90" id="b-728x90-5"><div class="ad-placeholder"><span class="badge">BANNER</span><span class="size">728×90</span><span class="slot-id">b-728x90-5</span></div></div>
+        </div>
+
+    </div>
+    <!-- END GRID -->
+
+    <!-- ===== POPUNDER INDICATOR ===== -->
+    <div class="pop-indicator" id="pop-ind">
+        <span class="pop-icon">⚡</span>
+        <span class="pop-label">POPUNDER <span class="top-tag">TOP</span></span>
+    </div>
+
+    <!-- ===== SMARTLINK BUTTON ===== -->
+    <a href="#" class="smart-btn" id="smart-btn">🔗 SMARTLINK</a>
+
+</body>
+</html>
